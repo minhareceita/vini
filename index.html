@@ -13,10 +13,15 @@
 
 }
 
-body{
-    background-color: black;
+@font-face {
+  font-family: font;
+  src: url('font.otf') format('opentype');
+
+
 }
 
+
+body{background-color: black;}
 .cabecalho{
     background-color: rgb(32, 32, 32);
     padding: 5px;
@@ -34,6 +39,13 @@ body{
 .logo{
 margin-left: 20%;
 color: azure;
+font-size: 40px;
+}
+
+.logo h1{
+    font-size: 40px;
+    font-family: font;
+    
 }
 .menu{
 margin-left: 20%;
@@ -51,6 +63,7 @@ a{
     text-decoration: none;
     list-style-type: none;
     color:white;
+    
 }
 
 a:hover{
@@ -61,6 +74,7 @@ a:hover{
 .banner{
     background-color: rgb(75, 73, 73);
     padding: 30px;
+    
 }
 
 
@@ -86,9 +100,11 @@ font-size: 50px;
 }
 
 .btnbanner{
+    align-items: center;
     text-align: center;
-    padding-top: 40px;
-    margin-left: 46%;
+    width: 100px;
+    margin-left: 45%;
+    margin-top: 3%;
    
     
     
@@ -98,7 +114,7 @@ font-size: 50px;
 
 .btnbg{
     background-color: rgb(68, 71, 71);
-    width: 100px;
+    width: 100%;
     height: 10px;
     padding: 20px;
     border-radius: 10px;
@@ -116,52 +132,10 @@ font-size: 50px;
     
     
 }
-.trabalhos{
-   
-    background-color: black;
-    color: white;
-    display: flex;
-    padding: 70px 
-    
-    
-}
 
-.conteudotb{
-  
-   width: 100%;
-   height: 1400px;
-    background-color: black;
-}
-
-
-
-
-
-.photos{
-    background-color: black;
-    margin-left: 23%;
-    padding: 15px;
- 
-    display: flex;
-    width: 800px;
-    
-}
-
-
-.imgphotos{
-   padding: 10px;
-    margin-right: 30%;
-    padding: 0%;
-}
-
-.textphotos p{
-    font-size: 30px;
-    font-family: sans-serif;
-    
-}
 
 h1{
-    font-size: 50px;
+    font-size: 70px;
     color: aquamarine;
 
 }
@@ -177,46 +151,269 @@ background-color: black;
     
 }
 
-.menur{
+
+
+
+
+
+.conteudo{ 
+
    
-    margin-left: 40%;
- margin-right: 40%;
- align-items: center;
+    margin-left: 30%;
+    display: block;
+    margin-top: 5%;
+
+   
 }
 
-.menur li{
+p{
+    font-size: 40px;
+    color: white;
+    font-family: sans-serif;
+}
+
+.subct {
+    display: flex;
+    padding: 5% 0%;
+}
+
+
+.textct{
+
+    margin-top: 5%;
+    margin-left: 9%;
+}
+
+.rodape{
+    padding:30px 0px;
+    background-color: rgb(32, 32, 32);
+    height: 105px;
+}
+.menuroda{
+  text-align: center; 
+  display: inline;
+  align-items: center;
+  padding: 30px 0px;
+    
+}
+.rederoda{
+    padding: 30px 0px;
+    align-items: center;
+    text-align: center;
+}
+
+.rederoda img{
+width: 30px;
+height: 30px;
+padding: 10px 40px;
+
+}
+
+
+.menuroda li{
+
+align-items: center;
+text-align: center;
+display: inline;
+padding: 0px 30px;
+
+}
+
+
+@media screen and (max-width:900px){
+
+    .cabecalho{
+    background-color: rgb(32, 32, 32);
+    padding: 5px;
+    position: fixed;
+    width: 100%;
+}
+
+
+
+.nav{
+    display: flex;
+    padding: 5px;
+    align-items: center;
+}
+.logo{
+margin-left: 20%;
+color: azure;
+font-size: 40px;
+}
+
+.logo h1{
+    font-size: 20px;
+    font-family: font;
+    
+}
+.menu{
+margin-left: 20%;
+}
+
+.menu li{
+   
+    display: inline;
+    padding: 40px;
+    align-items: center;
+ 
+
+}
+
+a{
     text-decoration: none;
     list-style-type: none;
-    display: inline;
-    padding: 3%;
-    align-items: center;
-    margin-left: 10%;
+    color:white;
     
 }
 
-.munur ul li a{
-    color: black;
+a:hover{
+ 
+    color:rgb(197, 196, 196);
 }
 
-.rede img{
-    width: 30px;
-    height: 30px;
-    margin: 30px;
-}
-.rede{
-    margin-top: 2%;
-    margin-left: 42%;
-}
-.z{
-    font-size: 30px;
-    font-family: font;
-    color: rgb(14, 185, 185);
+.banner{
+    background-color: rgb(75, 73, 73);
+    padding: 30px;
+    
 }
 
-@font-face {
-  font-family: 'font';
-  src: url('font.otf') format('truetype');
+
+.imgbanner{
+    height: 600px;
+ width: 100%;
+    background-image: url("banner.jpg");
+    border: solid 1px black;
+    
+    
 }
+
+.textbenner{
+    padding-top: 10%;
+    text-align: center;
+
+}
+
+.textbenner h1{
+font-size: 50px;
+ color: white;
+
+}
+
+.btnbanner{
+    align-items: center;
+    text-align: center;
+    width: 100px;
+    margin-left: 25%;
+    margin-top: 3%;
+   
+    
+    
+
+    
+}
+
+.btnbg{
+    background-color: rgb(68, 71, 71);
+    width: 100%;
+    height: 10px;
+    padding: 20px;
+    border-radius: 10px;
+   
+}
+
+.btnbanner a{
+    margin-top: 10px;
+    color: white;
+    font-family: sans-serif;
+}
+.btnbanner a:hover{
+    
+    color:rgb(173, 173, 173);
+    
+    
+}
+
+
+h1{
+    font-size: 70px;
+    color: aquamarine;
+
+}
+.trabalhos img{border: 1px solid rgb(180, 178, 178);}
+
+
+.rodape{
+    margin-top: 5%;
+background-color: black;
+
+    
+    
+    
+}
+
+
+
+
+
+
+.conteudo{ 
+
+   
+    margin-left: 5%;
+    display: block;
+    margin-top: 5%;
+
+   
+}
+
+p{
+    font-size: 40px;
+    color: white;
+    font-family: sans-serif;
+}
+
+.subct {
+    display: block;
+   
+}
+
+
+.textct{
+
+    margin-top: 5%;
+    margin-left: 2%;
+}
+
+.rodape{
+    padding:30px 0px;
+    background-color: rgb(32, 32, 32);
+    height: 105px;
+}
+.menuroda{
+  text-align: center; 
+  display: inline;
+  align-items: center;
+  padding: 30px 0px;
+    
+}
+.rederoda{
+    padding: 30px 0px;
+    align-items: center;
+    text-align: center;
+}
+
+.rederoda img{
+width: 30px;
+height: 30px;
+padding: 10px 40px;
+
+}
+}
+    
+
+  
+
 
 </style>
 
@@ -261,153 +458,121 @@ background-color: black;
     </div>
    </Div>
 
+</div>
+</Div>
 
-<Div class="trabalhos" >
 
-   
-<div class="conteudotb" id="trabalho">
-
-    <div class="photos">
-
-        <div class="imgphotos">
-        
-        <img src="jade.jpg" alt="">    
-        </div>
-        
-        <div class="textphotos">
-        <h1>Edição de fotos profissionais</h1><br>
-        <p> correçao da luz<br>
-        background<br>
-        tratamento da pele<br>
-        Logs e banners.<br>
-        </p>
-        
-        </div>
-        
-        
-        </div>
-
-        <div class="photos">
-
-            <div class="imgphotos">
-            
-            <img src="editsvideo.jpg" alt="">    
-            </div>
-            
-            <div class="textphotos">
-            <h1>Edição de videos</h1>
-            <p> Videos personalizados<br>
-                cortes de video<br>
-                intro<br>
-                textos.<br>
-            </p>
-            
-            </div>
-            
-            
-            </div>
-            <div class="photos">
-
-                <div class="imgphotos">
+<div class="conteudo" id="trabalho">
+<div class="subct">
                 
-                <img src="sites.jpg" alt="">    
-                </div>
+            <div class="imgct">
+                <h1>Edição de photos</h1>
+                <br>
+                <img src="jade.jpg" alt="">
+            </div>
+
+            <div class="textct">        
+                <p>Correçao da luz<br>
+                    background<br>
+                    tratamento da pele<br>
+                    Logs e banners.</p>
+            </div>
+
+        </div>
+    
+        <div class="subct">
                 
-                <div class="textphotos">
-                <h1>Sites</h1><br>
+            <div class="imgct">
+                <h1>Edição de videos</h1>
+                <br>
+                <img src="editsvideo.jpg" alt="">
+            </div>
+
+            <div class="textct">        
+                <p>Videos personalizados<br>
+                    cortes de video<br>
+                    intro<br>
+                    textos.</p>
+            </div>
+
+        </div>
+
+
+        <div class="subct">
+                
+            <div class="imgct">
+                <h1>Sites</h1>
+                <br>
+                <img src="sites.jpg" alt="">
+            </div>
+
+            <div class="textct">        
                 <p>Sites profissionais<br>
                     template<br>
                     design<br>
-                </p>
-                
-                </div>
-                
-                
-                </div>
-                <div class="photos">
-
-                    <div class="imgphotos">
-                    
-                    <img src="tw.jpg" alt="">    
-                    </div>
-                    
-                    <div class="textphotos">
-                    <h1>Twitch</h1><br>
-                    <p> Live na Twitch<br>
-                        todos os dias<br>
-                        na parte da manhã<br>
-                        de cod e<br>
-                        pubg.<br>
                     </p>
-                    
-                    </div>
-                    
-                    
-                    </div>
-                    <div class="photos">
+            </div>
 
-                        <div class="imgphotos">
-                        
-                        <img src="youtube.jpg" alt="">    
-                        </div>
-                        
-                        <div class="textphotos">
-                        <h1>Youtube</h1><br>
-                        <p> Canal no youtube<br>
-                            videos toda semana<br>
-                            de jogos<br>
-                            vlogs.
-                        </p>
-                        
-                        </div>
-                        
-                        
-                        </div>
+        </div>
+        <div class="subct">
+                
+            <div class="imgct">
+                <h1>Twitch</h1>
+                <br>
+                <img src="tw.jpg" alt="">
+            </div>
 
+            <div class="textct">        
+                <p>Live na Twitch<br>
+                    todos os dias<br>
+                    na parte da manhã<br>
+                    de cod e<br>
+                    pubg.<br>
+                    </p>
+            </div>
 
+        </div>
+        <div class="subct">
+                
+            <div class="imgct">
+                <h1>youtube</h1>
+                <br>
+                <img src="youtube.jpg" alt="">
+            </div>
 
+            <div class="textct">        
+                <p>Canal no youtube<br>
+                    videos toda semana<br>
+                    de jogos<br>
+                    vlogs.</p>
+            </div>
 
-
-</div>
-
-
-
-
-</Div>
-
-
-
-<Div class="rodape">
-
-<div class="menur">
-
-    <ul>
-        <li><a href="index.html">Home</a></li>
-     
-        <li><a href="https://www.instagram.com/viniciusc56/">Contato</a></li>
-        <li><a href="#topo">Topo</a></li>
-        
-    </ul>
-
-</div>
-<div class="rede">
-
-    <a href="https://www.twitch.tv/vini5six"><img src="rt.png" alt=""></a>
-    <a href="https://www.youtube.com/channel/UCLHNbwH8sALk4mYmoHmDYWQ"><img src="ry.png" alt=""></a>
-    <a href="https://www.instagram.com/viniciusc56/"><img src="ri.png" alt=""></a>
-
-<p>todos os direitor rerse</p>
-</div>
-
+        </div>
 
 </div>
 
 
+<div class="rodape">
 
 
+    <div class="menuroda">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="https://www.instagram.com/viniciusc56/">Contato</a></li>
+          <li><a href="#trabalho">Topo</a></li>
+        </ul>
 
-</Div>
+    </div>
 
+    <div class="rederoda">
+       <a href="https://www.instagram.com/viniciusc56/"><img src="ri.png" alt=""></a>
+       <a href="https://www.youtube.com/channel/UCLHNbwH8sALk4mYmoHmDYWQ"><img src="ry.png" alt=""></a>
+       <a href="https://www.twitch.tv/vini5six"><img src="rt.png" alt=""></a>
+
+    </div>
+
+
+</div>
 
 </body>
 </html>
